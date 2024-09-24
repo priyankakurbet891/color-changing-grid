@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 80px); /* 10 columns */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    transition: background-color 0.5s ease;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
